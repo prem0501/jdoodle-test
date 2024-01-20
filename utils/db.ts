@@ -1,6 +1,7 @@
 import type { DB } from '~/types/db.interface';
 
 export function defineAssociations(db: DB) {
+	console.log(Object.keys(db));
 	db.Users.belongsTo(db.Genders, {
 		foreignKey: 'genderId',
 	});

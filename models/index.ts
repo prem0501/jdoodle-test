@@ -29,7 +29,7 @@ const sequelize = new Sequelize(
 let db: DB & ModelWithFKeyMap = {};
 db.sequelize = sequelize;
 
-const folder = path.join(process.cwd(), '/migrations/');
+const folder = path.join(process.cwd(), 'migrations/');
 
 const files = fs.readdirSync(folder);
 
@@ -38,13 +38,14 @@ const modelsFound = files
 		return (
 			fileName.includes('create') &&
 			fileName.indexOf('.') !== 0 &&
-			fileName.slice(-3) === '.js'
+			fileName.slice(-4) === '.cjs'
 		);
 	})
 	.map((n: string) => {
 		const str = n.substring(n.lastIndexOf('-') + 1);
 		return str;
 	});
+
 const ps = modelsFound.map(async (fileName: string) => {
 	let className =
 		fileName.substring(0, 1).toUpperCase() + fileName.substring(1);
