@@ -20,7 +20,9 @@
 	"devDependencies": {
 		"@iconify/json": "^2.2.102",
 		"@sidebase/nuxt-auth": "0.5",
+		"@types/bcryptjs": "^2.4.6",
 		"@types/formidable": "^3.4.5",
+		"@types/jsonwebtoken": "^9.0.2",
 		"nuxt": "^3.9.3",
 		"postcss-custom-properties": "^13.3.3",
 		"sass": "^1.65.1",
@@ -35,9 +37,6 @@
 		"@nuxt/ui": "^2.11.1",
 		"@nuxtjs/color-mode": "^3.3.0",
 		"@pinia/nuxt": "^0.4.11",
-		"@types/bcryptjs": "^2.4.6",
-		"@types/jsonwebtoken": "^9.0.2",
-		"@types/uuid": "^9.0.7",
 		"bcryptjs": "^2.4.3",
 		"chart.js": "^4.4.0",
 		"cookie-parser": "^1.4.6",
@@ -51,8 +50,6 @@
 		"sequelize": "^6.32.1",
 		"sequelize-auto": "^0.8.8",
 		"sequelize-cli": "^6.6.1",
-		"vue-chartjs": "^5.2.0",
-		"vuejs3-datepicker": "^1.0.19",
 		"yup": "^1.2.0"
 	}
 }
